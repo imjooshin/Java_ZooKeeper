@@ -1,6 +1,7 @@
 public class ZooKeeperBat extends ZooKeeperMammal {
 
-    public ZooKeeperBat(){
+    public ZooKeeperBat(String name){
+        setName(name);
         setEnergy(300);
     }
 
@@ -12,7 +13,7 @@ public class ZooKeeperBat extends ZooKeeperMammal {
         if(getEnergy() - 50 > 0){
             setEnergy(getEnergy() - 50);
         }else{
-            System.out.println("Too Tired...");
+            System.out.println(getName()+" is Too Tired...");
         }
         System.out.println("*****Energy level: "+getEnergy());
 
@@ -20,7 +21,7 @@ public class ZooKeeperBat extends ZooKeeperMammal {
     }
 
     public ZooKeeperBat eatHumans(){
-        System.out.println("Eating Human............");
+        System.out.println(getName()+" is Eating Human...");
         // System.out.println(getEnergy());
         setEnergy(getEnergy() + 25);
         System.out.println("*****Energy level: "+getEnergy());
@@ -28,13 +29,13 @@ public class ZooKeeperBat extends ZooKeeperMammal {
     }
 
     public ZooKeeperBat attackTown(){
-        System.out.println("Ahh...............");
+        System.out.println("Ahh...");
         // System.out.println(getEnergy());
 
         if(getEnergy() - 100 > 0){
             setEnergy(getEnergy() - 100);
         }else{
-            System.out.println("Too Tired...");
+            System.out.println(getName()+" is Too Tired...");
         }
         System.out.println("*****Energy level: "+getEnergy());
 

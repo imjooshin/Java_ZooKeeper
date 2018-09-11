@@ -1,4 +1,5 @@
 public class ZooKeeperMammal {
+	private String name;
 	private int energy;
 
 	public ZooKeeperMammal(){ // constructor - name must match the class name
@@ -7,6 +8,14 @@ public class ZooKeeperMammal {
 
 	public int getEnergy(){
 		return this.energy;
+	}
+
+	public String getName(){
+		return this.name;
+	}
+
+	public void setName(String name){
+		this.name = name;
 	}
 
 	public ZooKeeperMammal setEnergy(int val){
